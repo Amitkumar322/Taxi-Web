@@ -1,0 +1,59 @@
+/* About.css */
+
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Carousel styles */
+.carousel {
+    margin-bottom: 30px;
+}
+
+.carousel-caption {
+    bottom: 20px;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+/* About section styles */
+.about {
+    background-color: #f8f9fa; /* Light background for contrast */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Our Pictures section styles */
+
+
+
+@media (max-width: 576px) {
+    .about h1 {
+        font-size: 2rem;
+    }
+    
+    .about p {
+        font-size: 1rem;
+    }
+    
+    
+}

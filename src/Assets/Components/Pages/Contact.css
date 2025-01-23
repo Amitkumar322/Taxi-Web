@@ -1,0 +1,17 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+@media screen and (max-width:1250px) {
+    .map{
+        width:450px;
+        height:400px;
+    }
+}
+@media screen and (max-width:992px) {
+    .map{
+        width:350px;
+        height:370px;
+    }
+}

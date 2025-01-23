@@ -1,0 +1,14 @@
+.background-div {
+    width: 100%; /* Set width as needed */
+    height: 400px; /* Set height as needed */
+    background-image: url('./images/car1.jpg'); /* Path to your image */
+    background-size: cover; /* Cover the entire div */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    z-index: 6;
+    top:0;
+}
+.card, img{
+    height: 200px;
+    width: 200px;
+}

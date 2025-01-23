@@ -1,0 +1,418 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+.btn:hover {
+  background-color: #0056b3; 
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+/* imgslider */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  height: 40%;
+}
+
+.carousel .carousel-inner {
+  height: 100%; /* Ensure carousel takes full height */
+}
+
+.carousel .carousel-item {
+  height: 50%; /* Ensure each item takes full height of the carousel */
+}
+
+.carousel .carousel-item img {
+  object-fit: contain; /* Ensures that the whole image fits within the container */
+  width: 100%; /* Ensures the image takes full width of the carousel */
+  height: 50%; /* Ensures the image takes full height of the carousel */
+  object-position: center; /* Centers the image if there is empty space */
+}
+
+.carousel .carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.carousel .carousel-caption .head {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.carousel .carousel-caption .par {
+  font-size: 1.2rem;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+
+/* section2 */
+/* Container Styles */
+.services-container {
+  margin-top: 10rem;
+}
+
+.services .service-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add hover effect for service card */
+.services .service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+.service-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* Heading Styles */
+.heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Button Styles */
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styling */
+@media (max-width: 767px) {
+  .services .service-card {
+    padding: 1.5rem;
+  }
+
+  .heading {
+    font-size: 1.25rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+  }
+
+  .service-img {
+    height: 180px; /* Adjust image height for small screens */
+  }
+}
+
+@media (max-width: 991px) {
+  .services .service-card {
+    padding: 1.8rem;
+  }
+
+  .heading {
+    font-size: 1.3rem;
+  }
+
+  .service-img {
+    height: 200px; /* Adjust image height for medium screens */
+  }
+}
+
+/* section3 */
+.tour-travel-container {
+  margin-top:3rem; 
+  margin-bottom: 0; 
+}
+
+.tour-travel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.tour-travel .col-md-6 {
+  padding: 15px;
+}
+
+.img3 {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+  border-radius: 30%;
+}
+
+.tour-contactus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.phone-number {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #007bff;
+  margin-bottom: 1.5rem;
+}
+
+.icon {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 1.5rem;
+}
+
+.icon:hover {
+  color: #0056b3;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .tour-contactus {
+      padding: 0 15px;
+  }
+
+  .title {
+      font-size: 1.5rem;
+  }
+
+  .description {
+      font-size: 1rem;
+  }
+
+  .phone-number {
+      font-size: 1.2rem;
+  }
+
+  .btn {
+      font-size: 1rem;
+  }
+}
+
+/* section4 */
+.cars-prices {
+  margin-top: 3rem;
+  margin-bottom: 0; 
+}
+
+/* Heading and Paragraph Styling */
+.heading2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.para {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #777;
+  margin-bottom: 0; 
+}
+
+/* Styling for Car Rate Section */
+.car-rates {
+  text-align: center;
+  margin-bottom: 0; 
+}
+
+.cars-prices-img {
+  max-height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.cars-prices-img:hover {
+  transform: scale(1.05);
+}
+
+/* Styling for Car Names and Prices */
+h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 0; 
+}
+
+/* Contact Button Styling */
+.btn1 {
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  text-transform: uppercase;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn1:hover {
+  background-color: #28a745;
+  transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .heading2 {
+      font-size: 2rem;
+  }
+
+  .para {
+      font-size: 1rem;
+  }
+
+  .car-rates {
+      margin-bottom: 0;
+  }
+
+  h3 {
+      font-size: 1.4rem;
+  }
+
+  p {
+      font-size: 1rem;
+  }
+
+  .btn1 {
+      font-size: 1.1rem;
+      padding: 10px 25px;
+  }
+}
+
+/* section5 */
+.container {
+  padding: 0;
+}
+
+/* Header Styles */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0; 
+}
+
+.text-muted {
+  color: #6c757d;
+}
+
+strong {
+  color: #000;
+}
+
+/* Styling for the car drop section */
+.car-drops {
+  margin-bottom: 0;
+}
+
+.drop-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect on cards */
+.drop-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h5 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 8px 0;
+}
+
+/* section6 styling */
+.testimonial-card{
+  border: 2px solid white;
+  background-color: white;
+  border-radius:10px;
+  text-align: center;
+  margin: auto;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.testimonial-card:hover{
+  transform:translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
