@@ -1,4 +1,3 @@
-import React from "react";
 import './OurServices.css';
 import { Layout } from "../Layout/Layout";
 
@@ -6,26 +5,17 @@ export const OurServices = () => {
     return (
         <div>
             <Layout>
-                <div className="container mt-5" >
-                    <div className=" row wrapper">
-                        <div className="img-area">
-                            <div className="single-img img1">
-                            </div>
-                            <div className="single-img img2">
-                            </div>
-                            <div className="single-img img4">
-                            </div>
-                            <div className="single-img img5">
-                            </div>
-                            <div className="single-img img6">
-                            </div>
-                        </div>
+                <div className="cont mt-5" >
+                   <div className="banner-img-1">
+                    <div className="text-1">
+                        <h1>our services </h1>
                     </div>
+                   </div>
                 </div>
 {/* section2 */}
-<div className="container">
-                <div className="Our-Services" style={{ marginTop: '350px' }} >
-                    <h1 className="heading">Our Services</h1>
+    <div className="container">
+                <div className="Our-Services" >
+                    <h1 className="heading-1">Our Services</h1>
                     <h3>Taxi Services:</h3>
                     <p>Experience the convenience of door-to-door transportation with our premium taxi service. Our fleet of well-maintained and comfortable taxis ensures a safe and enjoyable journey from Chandigarh to various destinations in Himachal Pradesh, Jammu and Kashmir, Uttarakhand, Rajasthan, and all other parts of India. Our professional drivers, well-versed with local routes, guarantee timely arrivals and departures.</p>
 
@@ -45,8 +35,8 @@ export const OurServices = () => {
 {/* section2 */}
 
 {/* section3 */}
-                <div className="container" style={{ marginTop: '40px' }} >
-                    <h1 className="heading">Why Choose Sai Tour And Travels</h1>
+                <div className="container sec-2"  >
+                    <h1 className="heading-1">Why Choose Sai Tour And Travels</h1>
                     <h3>Reliable and Trusted:</h3>
                     <p>We take pride in our reputation as a reliable and trusted travel partner. Our commitment to providing safe and punctual transportation has earned us the trust of countless satisfied customers.</p>
 
@@ -60,8 +50,8 @@ export const OurServices = () => {
                     <p>We believe that quality transportation should be accessible to all. Our competitive and transparent pricing ensures that you receive exceptional service at the best value.</p>
                 </div>
                 <div className="container">
-                <div className="contact" style={{ marginTop: '40px' }} >
-                    <h1>Contact Us:</h1>
+                <div className="contact" >
+                    <h1 className="heading-1">Contact Us:</h1>
                     <p>Let Sai Tour And Travels be your partner in unforgettable journeys. To book our taxi service, tempo travellers, luxury buses, sedan cars, or luxury sedan cars for rental from Chandigarh to Himachal, Jammu and Kashmir, Uttarakhand, Rajasthan, and beyond, reach out to us at: Website: www.shrikrishnatravels.com</p>
                 </div>
                 </div>

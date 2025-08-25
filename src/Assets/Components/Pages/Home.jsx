@@ -6,46 +6,24 @@ export const Home =()=>{
     return(
         <div className="Home">
             <Layout>
-  {/* section1 image slider */}
-  {/* Section 1 - Carousel with smooth transition */}
-  <div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel">
-  <div className="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div className="carousel-inner">
-    <div className="carousel-item active" data-bs-interval="10000">
-      <img src={require("./images/tourimg1.jpeg")} className="d-block w-100 img" alt="Slide 1" />
-    </div>
-    <div className="carousel-item" data-bs-interval="2000">
-      <img src={require("./images/tourimg4.jpeg")} className="d-block w-100 img" alt="Slide 2" />
-    </div>
-    <div className="carousel-item">
-      <img src={require("./images/tourimg3.jpeg")} className="d-block w-100 img" alt="Slide 3" />
-    </div>
-  </div>
-  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Previous</span>
-  </button>
-  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Next</span>
-  </button>
-</div>
 
-    {/* section1 image slider */}
-
+    
+    {/* banner-sec */}
+      <div className="banner-img">
+        <div className="banner-text">
+        </div>
+      </div>
+    {/* banner-sec */}
+    
       {/* section2  services of taxi*/}
-      <div className="container services-container" style={{ marginTop: '10rem' }} data-aos="fade-up">
+      <div className="container services-container"  data-aos="fade-up">
   <div className="row services">
     <div className="col-12 col-md-6 col-lg-4 box-1 mb-4">
       <div className="service-card">
         <img src={require("./images/pathankotimg.jpg")} alt="Taxi Service in Pathankot" className="service-img" />
         <h4 className='heading text-center'>Taxi Service in Pathankot</h4>
-        <p className="text-center">Contact for the best taxi service in Pathankot</p>
-        <button className='btn btn-primary d-flex mx-auto'>More</button>
+        <p className="text-center mb-3">Contact for the best taxi service in Pathankot</p>
+        <button className='button-2 d-flex mx-auto'>More</button>
       </div>
     </div>
 
@@ -53,8 +31,8 @@ export const Home =()=>{
       <div className="service-card">
         <img src={require("./images/amritsarimg.webp")}  alt="Taxi Service in Amritsar" className="service-img" />
         <h4 className='heading text-center'>Taxi Service in Amritsar</h4>
-        <p className="text-center">Get the best deals in taxi rentals in Amritsar</p>
-        <button className='btn btn-primary d-flex mx-auto'>More</button>
+        <p className="text-center mb-3">Get the best deals in taxi rentals in Amritsar</p>
+        <button className='button-2 d-flex mx-auto'>More</button>
       </div>
     </div>
 
@@ -62,8 +40,8 @@ export const Home =()=>{
       <div className="service-card">
         <img src={require("./images/himachal.webp")}  alt="Tour Packages of Himachal" className="service-img" />
         <h4 className='heading text-center'>Tour Packages of Himachal</h4>
-        <p className="text-center">Visit the best tourist destinations of Himachal.</p>
-        <button className='btn btn-primary d-flex mx-auto'>More</button>
+        <p className="text-center mb-3">Visit the best tourist destinations of Himachal.</p>
+        <button className='button-2 d-flex mx-auto'>More</button>
       </div>
     </div>
 
@@ -71,8 +49,8 @@ export const Home =()=>{
       <div className="service-card">
         <img src={require("./images/kashmir.webp")}  alt="Visit Katra and Kashmir" className="service-img" />
         <h4 className='heading text-center'>Visit Katra and Kashmir</h4>
-        <p className="text-center">Best tour packages & taxi rentals of Kashmir & Katra</p>
-        <button className='btn btn-primary d-flex mx-auto'>More</button>
+        <p className="text-center mb-3">Best tour packages & taxi rentals of Kashmir & Katra</p>
+        <button className='button-2 d-flex mx-auto'>More</button>
       </div>
     </div>
 
@@ -80,8 +58,8 @@ export const Home =()=>{
       <div className="service-card">
         <img src={require("./images/Delhi.jpg")}  alt="Taxi Service to Delhi Airport" className="service-img" />
         <h4 className='heading text-center'>Taxi Service to Delhi Airport</h4>
-        <p className="text-center">Best taxi service for pickups and drops to Delhi Airport</p>
-        <button className='btn btn-primary d-flex mx-auto'>More</button>
+        <p className="text-center mb-3">Best taxi service for pickups and drops to Delhi Airport</p>
+        <button className='button-2 d-flex mx-auto'>More</button>
       </div>
     </div>
 
@@ -89,15 +67,12 @@ export const Home =()=>{
       <div className="service-card">
         <img src={require("./images/Uttar-Pradesh.jpg")} alt="Tour Packages of Uttar Pradesh" className="service-img" />
         <h4 className='heading text-center'>Tour Packages of Uttar Pradesh</h4>
-        <p className="text-center">Visit the best tourist destinations in Uttar Pradesh</p>
-        <button className='btn btn-primary d-flex mx-auto'>More</button>
+        <p className="text-center mb-3">Visit the best tourist destinations in Uttar Pradesh</p>
+        <button className=' button-2 d-flex mx-auto'>More</button>
       </div>
     </div>
   </div>
 </div>
-
-
-
     {/* section2 */}
 
       {/* section3 contact us for */}
@@ -107,7 +82,7 @@ export const Home =()=>{
       <img 
         src={require("./images/tourimg5.jpeg")} 
         alt="Travel Agency" 
-        className="img-fluid img3" 
+        className="image-fluid img3" 
       />
     </div>
     <div className="col-12 col-md-6 tour-contactus">
@@ -133,8 +108,8 @@ export const Home =()=>{
     {/* section3 */}
 
     {/* section4 prices of taxi */}
-    <div className="container cars-prices" data-aos="fade-left">
-  <div className="row">
+    <div className="container-fluid cars-prices" >
+  <div className="row " data-aos="fade-left">
     <h1 className="heading2">Our fleet of luxury Cars and SUVs</h1>
     <p className="para">Ride with us with full enjoyment</p>
     
@@ -207,7 +182,7 @@ export const Home =()=>{
     {/* Contact Button */}
     <div className="row mt-3" data-aos="fade-left">
       <Link to="/contact">
-        <button className="btn btn-success btn1 m-auto d-flex">
+        <button className=" btn1 m-auto d-flex">
           Contact for best prices
         </button>
       </Link>  
@@ -215,14 +190,12 @@ export const Home =()=>{
   </div>
 </div>
 
-
-
     {/* section4 */}
 
     {/* section5 prices of all cars for Drops  */}
     <div className="container" data-aos="fade-in">
   <div className="row Drops mt-5">
-    <h1 className="text-center">Best Car and Taxi Rates for Drops</h1>
+    <h1 className="text-center price-heading">Best Car and Taxi Rates for Drops</h1>
     <p className="text-center text-muted mb-4">Call us for Booking: <strong>+91 9876745637</strong></p>
 
     {/* Pathankot to Chandigarh */}
@@ -294,7 +267,7 @@ export const Home =()=>{
     {/* section5 */}
 
     {/* section6 */}
-    <div className="container Testimonials mt-5" data-aos="fade-up">
+    <div className="container testimonials mt-5" data-aos="fade-up">
   <h1 className="text-center ">TESTIMONIALS</h1>
   <p className="review text-center mt-3">200 Excellent reviews from our customers</p>
   

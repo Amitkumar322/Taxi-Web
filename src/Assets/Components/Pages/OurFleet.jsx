@@ -1,16 +1,19 @@
-import React from "react"
-import './OurFleet.css'
-import { Layout } from "../Layout/Layout"
+import { Layout } from "../Layout/Layout";
+import './OurFleet.css';
 export const OurFleet =()=>{
     return(
         <div>
           <Layout>
             {/* section1 */}
+          <div className="cont mt-5" >
+                   <div className="banner-img-1">
+                    <div className="text-1">
+                        <h1>YOU FEEL COMFORTABLE WITH US </h1>
+                        <h1>WE PROVIDE BEST SERVICES AND BEST PRICE</h1>
+                    </div>
+                   </div>
+                </div>
          
-          <div className="background-div">
-            <h1>YOU FEEL COMFORTABLE WITH US </h1>
-            <h2>WE PROVIDE BEST SERVICES AND BEST PRICE</h2>
-        </div>
         
             {/* section1 */}
             {/* section2 */}

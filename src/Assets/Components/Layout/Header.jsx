@@ -1,31 +1,36 @@
-import React from "react"
 import './Header.css';
-// import {Link} from 'react-router-dom';
-export const Header  =()=>{
-    return(
-        <div>
 
-<div className="marquee-container">
-  <div className="marquee-content">
-    <div className="marquee-item">
-      <h4 className="text-center">Airport Transfers</h4>
-      <p className="text-center">Offered At Short Notice</p>
-    </div>
-    <div className="marquee-item">
-      <h4 className="text-center">Wedding Parties</h4>
-      <p className="text-center">Can Be Easily Arranged</p>
-    </div>
-    <div className="marquee-item">
-      <h4 className="text-center">Business</h4>
-      <p className="text-center">You Will Arrive On Time</p>
-    </div>
-    <div className="marquee-item">
-      <p className='phone'>+91 9876745637</p>
-      <p className='gmail'>gmailrahil24322@gmail.com</p>
-    </div>
-  </div>
-</div>
- 
+export const Header = () => {
+  return (
+    <div className="marquee-container">
+      <div className="marquee-content">
+        <div className="marquee-item">
+          <h4>Airport Transfers || Offered At Short Notice</h4>
         </div>
-    )
-}
+        <div className="marquee-item">
+          <h4>Wedding Parties || Can Be Easily Arranged</h4>
+        </div>
+        <div className="marquee-item">
+          <h4>Business || You Will Arrive On Time</h4>
+        </div>
+        <div className="marquee-item">
+          <h4 className="phone">+91 9876745637 || gmailrahil24322@gmail.com</h4>
+        </div>
+
+        {/* Duplicate items for infinite loop */}
+        <div className="marquee-item">
+          <h4>Airport Transfers || Offered At Short Notice</h4>
+        </div>
+        <div className="marquee-item">
+          <h4>Wedding Parties || Can Be Easily Arranged</h4>
+        </div>
+        <div className="marquee-item">
+          <h4>Business || You Will Arrive On Time</h4>
+        </div>
+        <div className="marquee-item">
+          <h4 className="phone">+91 9876745637 || gmailrahil24322@gmail.com</h4>
+        </div>
+      </div>
+    </div>
+  );
+};

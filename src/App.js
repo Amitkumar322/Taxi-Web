@@ -3,10 +3,6 @@ import{BrowserRouter, Route, Routes} from 'react-router-dom';
 import { Home } from './Assets/Components/Pages/Home';
 import { About } from './Assets/Components/Pages/About';
 import { OurServices} from './Assets/Components/Pages/OurServices';
-import { ServiceOne} from './Assets/Components/Pages/ServiceOne';
-import { ServiceTwo} from './Assets/Components/Pages/ServiceTwo';
-import { ServiceThree} from './Assets/Components/Pages/ServiceThree';
-import { ServiceFour} from './Assets/Components/Pages/ServiceFour';
 import { Contact } from './Assets/Components/Pages/Contact';
 import { OurFleet } from './Assets/Components/Pages/OurFleet';
 import { OurBlogs } from './Assets/Components/Pages/OurBlogs';
@@ -30,10 +26,6 @@ function App() {
       <Route path="/" element={<Home/>}/>
       <Route path="/about" element={<About/>}/>
       <Route path="/Ourservices" element={<OurServices/>}/>
-      <Route path="/ServiceOne" element={<ServiceOne/>}/>
-      <Route path="/ServiceTwo" element={<ServiceTwo/>}/>
-      <Route path="/ServiceThree" element={<ServiceThree/>}/>
-      <Route path="/ServiceFour" element={<ServiceFour/>}/>
       <Route path="/OurFleet" element={<OurFleet/>}/>
       <Route path="/OurBlogs" element={<OurBlogs/>}/>
       <Route path="/contact" element={<Contact/>}/>

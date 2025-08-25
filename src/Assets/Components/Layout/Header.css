@@ -1,73 +1,29 @@
 .marquee-container {
   width: 100%;
   overflow: hidden;
-  background-color: #1e3c72; 
-  padding: 10px 0;
-  box-sizing: border-box;
+  background: white;
+  padding: 8px 0;
+  color: navy;
+  position: relative;
 }
 
 .marquee-content {
   display: flex;
-  justify-content: space-between;
-  animation: marquee 20s linear infinite; 
-  align-items: center;
-}
-
-.marquee-item {
-  display: inline-block;
-  margin-right: 20px;
-  color: #fff;
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  gap: 50px;
   white-space: nowrap;
-  padding: 5px;
-}
-
-.marquee-item p {
-  color: #f2c94c; 
-  margin: 0;
+  animation: marquee 15s linear infinite; /* continuous loop */
 }
 
 .marquee-item h4 {
-  font-size: 1.3rem;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
 }
-
-.phone, .gmail {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
 @keyframes marquee {
-  0% {
-    transform: translateX(100%);
+  from {
+    transform: translateX(0%);
   }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@media (max-width: 768px) {
-  .marquee-item {
-    font-size: 1rem;
-  }
-
-  .phone, .gmail {
-    font-size: 1rem;
-  }
-
-  .marquee-container {
-    padding: 8px 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .marquee-item {
-    font-size: 0.9rem; 
-  }
-
-  .phone, .gmail {
-    font-size: 0.9rem;
+  to {
+    transform: translateX(-50%);
   }
 }

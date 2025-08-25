@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Layout } from "../Layout/Layout";
+import './Onlinebooking.css';
 
 export const Onlinebooking = () => {    
     const [formData, setFormData] = useState({
@@ -49,7 +50,7 @@ export const Onlinebooking = () => {
         <div>
             <Layout>
                 <div className="container">
-                    <div className="row">
+                    <div className="row booking">
                         <h1 className="mt-5">BOOK YOUR TOUR TODAY WITH SAI CAR-TOUR-TRAVELS</h1>
                         <form onSubmit={submitForm}>
                             <input 
@@ -123,7 +124,7 @@ export const Onlinebooking = () => {
                                 required
                                 onChange={handleChange}
                             />
-                            <button type="submit" className="btn btn-primary  d-flex m-auto justify-content-center mt-5">
+                            <button type="submit" className="btn btn-primary  mt-4">
                                 Submit
                             </button>
                         </form>

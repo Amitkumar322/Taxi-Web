@@ -3,6 +3,16 @@
     padding:0;
     box-sizing: border-box;
 }
+.contact h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: navy;
+}
+.submit{
+    margin-top:20px;
+    background-color: transparent;
+    border: 2px solid rgb(0, 108, 184);
+    color: rgb(0, 108, 184);
+}
 @media screen and (max-width:1250px) {
     .map{
         width:450px;

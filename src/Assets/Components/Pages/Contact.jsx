@@ -29,6 +29,9 @@ export const Contact = () => {
         } else if (!/^[A-Za-z]+$/.test(fname)) {
             alert("First name should only contain alphabets.");
         } else if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)) {
+        } else if (!/^[A-Za-z]+$/.test(fname)) {
+            alert("last name should only contain alphabets.");
+        } else if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)) {
             alert("Please enter a valid email address.");
         } else if (phone.length !== 10) { 
             alert("Please enter a valid phone number with 10 digits.");
@@ -42,7 +45,7 @@ export const Contact = () => {
         <div>
             <Layout>
                 <div className="container">
-                    <div className="row">
+                    <div className="row contact">
                         <h1 className="mt-5">Feel free to get in touch with Sai Tour And Travels</h1>
                     </div>
                 </div>
@@ -85,7 +88,7 @@ export const Contact = () => {
                                     className="form-control mt-4" 
                                     onChange={handleChange}
                                 />
-                                <button type="submit" className="btn btn-primary mt-5 d-flex justify-content-center m-auto">Submit </button>
+                                <button type="submit" className="btn btn-primary  submit ">Submit </button>
                              </form>
                 
        
